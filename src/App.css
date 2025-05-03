@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100dvh;
+  width: 100dvw;
+}
