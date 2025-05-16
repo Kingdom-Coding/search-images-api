@@ -1,0 +1,38 @@
+.display-wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(min-content, 1fr);
+  padding: 2em;
+  height: 500px;
+  width: 100%;
+  background-color: #ffafaf;
+  margin-top: 1.3em;
+  overflow: scroll;
+  overflow-x: hidden;
+  gap: 1.5em;
+}
+
+.image-container {
+  justify-self: center;
+  padding: 1em;
+  background-color: #222222;
+  border-radius: 20px;
+}
+
+.image-container > img {
+  width: minmax(300px, 400px);
+}
+
+#user-image {
+  align-items: center;
+}
+
+.image-status {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+  font-size: 1.2em;
+  align-items: center;
+}
