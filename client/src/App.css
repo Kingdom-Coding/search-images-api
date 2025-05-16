@@ -12,3 +12,10 @@ body {
   height: 100dvh;
   width: 100dvw;
 }
+
+.container {
+  display: grid;
+  height: 100dvh;
+  width: 100dvw;
+  padding: 1em;
+}
