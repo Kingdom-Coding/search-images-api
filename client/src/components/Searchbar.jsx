@@ -17,7 +17,7 @@ export function Searchbar({ setResults }) {
     const fetchData = async () => {
       try {
         const res = await fetch(
-          `http://localhost:3000/pixabay?q=${debouncedSearch}`,
+          `http://localhost:3000/pixabay?q=${debouncedSearch}&per_page=100`,
           {
             headers: {
               "Content-Type": "application/json",
@@ -26,7 +26,7 @@ export function Searchbar({ setResults }) {
           }
         );
         const data = await res.json();
-
+        console.log("Fetched data:", data);
         const validResults = await Promise.all(
           data.hits.map((hit) =>
             preloadImage(hit.webformatURL, hit.userImageURL)
